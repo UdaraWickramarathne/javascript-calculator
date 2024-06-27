@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial;
+    color: white;
+    font-size: 1.08em;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 280px;
+    padding: 10px 0px 10px 10px;
+}
+.input-container{
+    display: grid;
+    grid-template-columns: repeat(4,60px);
+    gap: 10px;
+}
+button{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: none;
+}
+input[type="text"]{
+    height: 80px;
+    outline: none;
+    border: none;
+    background-color: black;
+    text-align: right;
+    padding-right:10px;
+    font-size: 2.3em;
+}
+
+.numbers{
+    background-color: hsl(0, 0%, 53%);
+    transition: background-color 0.15s;
+}
+.numbers:hover{
+    background-color: hsl(0, 0%, 69%);
+}
+.operators {
+    background-color: hsl(43, 89%, 46%);
+    transition: background-color 0.15s;
+}
+.operators:hover {
+    background-color: hsl(43, 97%, 58%);
+    transition: background-color 0.15s;
+}
