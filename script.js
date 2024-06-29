@@ -58,6 +58,12 @@ function calculate(){
             answer = prev * current;
             break;
         case '/':
+            if(current == 0){
+                display.value = "Cannot divide by zero";
+                operation = undefined;
+                previousOperand = '';
+                return;
+            }
             answer = prev / current;
             break;
         default:
